@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit, sans-serif;
+}
+* a{
+    text-decoration: none;
+}
+* li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Surat-Thani.jpg");
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 2rem;
+    color:white;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    margin-left: 0 17px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 1.2rem;
+    padding: 7px 15px;
+    transition: 0.3s;
+}
+
+.content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header,.grid-card{
+    width: 50%;
+    position: relative;
+}
+.content .header{
+    color: white;
+    padding: 20px;
+}
+.content .header h3{
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+}
+
+.content .header h3 i{
+    color: crimson;
+}
+
+.content .header h1{
+    font-size: 4rem;
+    color: white;
+}
+.content .header p{
+    opacity: .5;
+    font-size: 1.2rem;
+}
+.grid-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+.grid-card .box{
+    width: 100%;
+    height: 230px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 0.4s;
+}
+.bg1{
+    background-image: url("https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/486948089_1132147905260781_731735326554780663_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=I-8CJEj2SyEQ7kNvwHewetV&_nc_oc=AdmSWeC8IKeKCeI-YDcqmjZ2BwZ-FpbQeiQ1LGVmEXVxhlvp3xHhEVbEEFhXnnJb4wiM_z1vQZxpKKD3yEdaKYIq&_nc_zt=23&_nc_ht=scontent.fbkk5-4.fna&_nc_gid=WtrE9ijg0Ttye7M-5hBQNw&oh=00_Afjdkb2tSVimcgx3L6PHEx0wbnXGAofw3i62nvHQszJhtQ&oe=6923CDE9");
+}
+.bg2{
+    background-image: url("https://wpd.go.th/tmp/5d0e460314193e1b8f260594f642d53c.jpg");
+}
+.bg3{
+    background-image: url("https://wpd.go.th/tmp/9164cf410188dbd0082f1e530fa88ddf.jpg");
+}
+.bg4{
+    background-image: url("https://wpd.go.th/tmp/bf975ca9efe69664f4a19bfc61ac5c5f.jpg");
+}
+.content .box a{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    font-size: 1.6rem;
+    color: crimson;
+    text-decoration: none;
+    background: rgba(0,0,0,0);
+}
+.content .box:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header button{
+    border : solid 1px white;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 15px 0;
+    transition: 0.5s;
+}
+.header button:hover{
+    background: crimson;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.05);
+}
